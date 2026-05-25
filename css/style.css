@@ -1,0 +1,104 @@
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 120%;
+  background-color: lightyellow; 
+}
+
+header {
+	background-color: lightyellow;
+	line-height: 1.6em;
+	text-align: center; /* need to make header central aligned */
+}
+/* needed to make the SKIP TO MAIN CONTENT appear top left, above nav */
+header > a {
+	display: block;
+	text-align: left;
+}
+
+/* WK2: 4. Change the nav element to use inline-block and have a width of about 80%. */
+nav {
+	background-color: lightgray;
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+nav ul{
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
+}
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+main {
+	width: 80%;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	background-color: yellow;
+}
+
+footer {
+    background-color: green;
+    color: white;
+	width: 80%;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+/* WK2: 3. comment out previous li style */
+/*li {
+	display: inline-block;
+	width: 300px;
+}
+li > a {
+	text-decoration: none;
+} */
+
+h1 {
+	font-size: 4rem;
+	font-family: 'Times New Roman',Georgia, serif;
+	text-align: center;
+	color: #000080;  /* navy blue */
+	line-height: 1.2em;
+}
+
+p {
+	line-height: 1.6em;
+}
+/* WK2 5.Use a descendent selector to style only the image in the nav to have a width of about 10%.*/
+nav img {
+	width: 10%;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+}
+/* Wk2 5. Style the grid class to use a two column grid where each column is approximately 40%.  
+          Don't forget that to style a class element your selector should start with a period. */
+/* WK2 7. Play with the justify-content, align-items, and row-gap property values to copy the look of the screenshots*/
+.grid {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	row-gap: 10px;
+	column-gap: 10%;
+}
+/* WK2 6.Use the descendent selector to style only the images in the grid class to have a width of 100%.*/
+.grid img {
+	width: 100%;
+}
+/* Wk2 8. Style the flex class to use flex. Play with the flex-wrap and justify-content property values to 
+copy the look of the screenshots. */
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 10px;
+}
